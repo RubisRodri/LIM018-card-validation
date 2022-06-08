@@ -1,14 +1,110 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <section id="seccion1">
+      <div class="page-nav">    
+        <h1>BOUTIQUE MISTIC.</h1>
+        <h3 id="checkout">su monto a pagar es s/ 0</h3>
+        <br/>
+        <a href="#seccion2">Pagar</a>
+      </div>
+      </section>
+    </header>
+    <main>
+      <div class="page-content">
+        <div class="product-container">
+          <h3>nombre</h3>
+          <img src="img/cartera 1.jpg" />
+          <h3>S/200</h3>
+          <button class="button-add" onclick="sumarCuenta(200)">Agregar</button>
+        </div>
+        <div class="product-container">
+          <h3>nombre</h3>
+          <img src="img/cartera 2.jpg" />
+          <h3>S/120</h3>
+          <button class="button-add" onclick="sumarCuenta(120)">Agregar</button>
+        </div>
+        <div class="product-container">
+          <h3>nombre</h3>
+          <img src="img/cartera 3.jpg" />
+          <h3>S/300</h3>
+          <button class="button-add" onclick="sumarCuenta(300)">Agregar</button>
+          <br/>
+          <br/>
+        </div>
+         <div class="product-container">
+           <h3>nombre</h3>
+           <img src="img/cartera 4.jpg" />
+           <h3>S/200</h3>
+           <button class="button-add" onclick="sumarCuenta(200)">Agregar</button>
+        </div>
+         <div class="product-container">
+          <h3>nombre</h3>
+          <img src="img/cartera 5.jpg" />
+          <h3>S/100</h3>
+          <button class="button-add" onclick="sumarCuenta(100)">Agregar</button>
+        </div>
+         <div class="product-container">
+          <h3>nombre</h3>
+          <img src="img/cartera 6.jpg" />
+          <h3>S/75</h3>
+          <button class="button-add" onclick="sumarCuenta(75)">Agregar</button>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <section id="seccion2">
+        <div class="contenedor">
+          <form id=" formularios">
+            <h1>Coloque sus datos personales</h1>
+            <fieldset>
+            <div class="elemento">
+               <label for="nombre">Nombre y Apellido: </label><br />
+               <input type="text" id="nombre_apellido" placeholder="Escribe tu Nombre y Apellido" required ="true"/>
+               <br />
+               <label for="number">Ingresa el número de tu tarjeta:</label><br />
+               <input type="text" id="numberCard" required="true" maxlength="16"/>
+               <br/>
+               <label for="quantity" required="true"> Mes de Vencimiento</label>
+               <br />
+               <input type="number" id="mes" max="12" /><br/><br/>
+               <label for="number" required="true">Año de vencimiento</label>
+               <br/>
+               <input type="number" id="año" min="2022" max="2030"  required="true"/><br/>
+              <div>
+                <input type="submit" id="btn" value="PAGAR" />
+                <input type="reset" value="LIMPIAR" />
+              </div>
+            <div>
+              <p id="result">Gracias por su Preferencia.</p>
+              <br/>
+              <a href="#seccion1"> Volver</a>
+           </div>
+          </div>
+          </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Realizado por Rubis Rodriguez en Laboratoria.</p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
+
+
+
+
+

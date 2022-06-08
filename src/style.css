@@ -1,0 +1,139 @@
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:10px;
+    background: linear-gradient(rgb(240, 180, 180), #F25CA2);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button{
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+    left: 10;
+    nav-up: 40;
+}
+
+.page-nav{
+    background-color:rgb(168, 87, 112);
+    margin: 40px;
+    text-align: right;
+}
+
+.page-nav h1 {
+    margin: 30px; 
+    text-align: center;
+    font-size: 50px;
+}
+
+.page-nav h3{
+    text-align: right;
+    
+}
+a:link {
+  background-color: rgb(190, 188, 186);
+  padding: 10px 20px;
+  text-align: right;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+a:hover, a:active{
+    background-color: #f72585;
+}
+
+.page-content{
+    display:flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(12, 12, 12);
+}
+
+.product-container{
+    margin-left: 15;
+    padding: 2px 16px;
+    position: relative;   
+}
+
+.product-container:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.product-container img{
+    width: 130px;
+}
+
+.product-container h3{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.button-add{
+    transition-duration: 0.4s;
+    font-size:16px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid black;   
+    position:left;
+    left: 5px;
+    right: 10px;
+    bottom: 2px; 
+}
+
+.button-add:hover{
+    background-color: purple ;
+    color: white;    
+}
+
+h1{
+    margin: 0 0 20px;
+    padding: 0;
+    font-weight: 700px;
+    color: rgb(219, 100, 235);
+    text-align: center;   
+}
+.contenedor{
+    margin: 15px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    align-items: center;
+}
+.contenedor.elemento label{
+    color: #fff;
+}
+
+.contenedor .elemento input{
+    width: 100%;
+    padding: 3px 3px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid  #fff;
+}
+.contenedor .elemento input[type="submit"]{
+    background-color: #F72585;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+.contenedor .elemento input[type="reset"]{
+    background-color: rgb(82, 79, 79);
+    border:none;
+    padding: 5px;
+    text-align:center;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
